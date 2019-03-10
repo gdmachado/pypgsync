@@ -118,7 +118,7 @@ def sync(hostname, port, source_db, destination_db, tablename, username,
             total_rows = 0
             # loop through result in chunks
             for r in result_iter:
-                total_rows += r[0]
+                total_rows = r[0]
                 # variables used to calculate progress and ETA
                 t1 = time.time()
                 rows_per_sec = round(r[0] / (t1 - t0))
