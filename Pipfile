@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+python-language-server = {extras = ["all"],version = "*"}
+autopep8 = "*"
+pytest = "*"
+
+[packages]
+click = "*"
+sqlalchemy = "*"
+sqlalchemy-utils = "*"
+psycopg2-binary = "*"
+vistir = {extras = ["spinner"],version = "*"}
+crayons = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
